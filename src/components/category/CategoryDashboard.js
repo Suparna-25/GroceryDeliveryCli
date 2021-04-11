@@ -54,7 +54,7 @@ class CategoryDashBoard extends React.Component{
                                             <td> {category.categoryDescription}</td>
                                              <td>
                                                  <Link to={"/updateCategory/"+category.categoryId} className="btn btn-info"> Update </Link>
-                                                 <button className="btn btn-danger" onClick={this.onDeleteClick.bind(this,category.categoryId)}>Delete </button>
+                                                 <button className="u-margin-left-20 btn btn-danger" onClick={this.onDeleteClick.bind(this,category.categoryId)}>Delete </button>
                                              </td>
                                              </tr>
                                       

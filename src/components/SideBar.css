@@ -4,6 +4,8 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    padding-left : 0px;
+    margin-right: 20px;
   }
   
   .menu-bars {
@@ -27,6 +29,7 @@
   .nav-menu.active {
     left: 0;
     transition: 350ms;
+    z-index: 100;
   }
   
   .nav-text {
@@ -71,3 +74,17 @@
   span {
     margin-left: 16px;
   }
+
+  .search-box-wrapper {
+    display: flex;
+    margin: 20px 40px;
+    flex-direction: row-reverse;
+  }
+
+  .search-box {
+    width: 40%;
+  }
+
+ .u-margin-left-20 {
+  margin-left : 20px;
+ }
