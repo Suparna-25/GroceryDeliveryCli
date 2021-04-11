@@ -4,10 +4,10 @@ import Sidebar from "./Sidebar";
 
 function Navbar() {
   let colors = {
-    color: "#40E0D0",
+    color: "#17a2b8",
   };
   let bcolors = {
-    backgroundColor: "#40E0D0",
+    backgroundColor: "#17a2b8",
   };
 
   return (
@@ -101,7 +101,7 @@ function Navbar() {
         </div>
       </nav>
 
-      <div className='search-box-wrapper'>
+      <div className="search-box-wrapper">
         <div className="input-group search-box search-box">
           <input
             type="text"
@@ -110,9 +110,8 @@ function Navbar() {
             placeholder="Search products.."
           />
           <button
-            className="u-margin-left-20 btn btn-outline-success my-2 my-sm-0"
+            className="u-margin-left-20 btn btn-outline-info my-2 my-sm-0"
             type="submit"
-            style={colors}
           >
             Search
           </button>
