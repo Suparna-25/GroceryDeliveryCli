@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import {Link} from 'react-router-dom';
+import {NavDropdown} from 'react-bootstrap';
 import Sidebar from "./Sidebar";
 
 function Navbar() {
@@ -31,37 +32,18 @@ function Navbar() {
           id="navbarCollapse"
         >
           <div className="navbar-nav">
-            <a href="#" className="nav-item nav-link">
+          <Link to="/home" className="nav-item nav-link">
               Home
-            </a>
+            </Link>
             <a href="/categoryDashboard" className="nav-item nav-link">
               Category
             </a>
-            <div className="nav-item dropdown show">
-              <a
-                href="#"
-                data-toggle="dropdown"
-                className="nav-item nav-link dropdown-toggle"
-                aria-expanded="false"
-              >
-                Products
-              </a>
-              <div className="dropdown-menu">
-                <a href="#" className="dropdown-item">
-                  Add Product
-                </a>
-                <a href="#" className="dropdown-item">
-                  Update Product
-                </a>
-                <a href="#" className="dropdown-item">
-                  View Product
-                </a>
-                <a href="#" className="dropdown-item">
-                  Delete Product
-                </a>
-              </div>
-            </div>
-
+            <NavDropdown title="Dashboard" id="collasible-nav-dropdown">
+               
+                  <NavDropdown.Item href="/customerDashboard">CustomerDashboard</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/AdminDashboard">Admin dashboard </NavDropdown.Item>
+                  </NavDropdown>
             <a href="#" className="nav-item nav-link active">
               OrderList
             </a>
